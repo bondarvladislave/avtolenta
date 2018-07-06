@@ -319,8 +319,10 @@
 								</select>
 							</div>
 							<div class="checkbox-wrapper">
-								<label for="checkbox1"></label>
-								<input type="checkbox" id="checkbox1">
+								<input type="checkbox" id="checkbox1" checked>
+								<label for="checkbox1" class="checkbox-wrapper-item">
+									<div></div>
+								</label>
 								<label for="checkbox1">Фотографии</label>
 
 							</div>
@@ -602,8 +604,8 @@
 					<div>
 						<form>
 							<div class="main-table__notice-input">
-								<input type="text" placeholder="Ваш Email">
-								<button type="submit"></button>
+								<input type="text" placeholder="Ваш Email" required>
+								<button type="submit">></button>
 							</div>
 							<p>Подписаться</p>
 						</form>
@@ -742,7 +744,13 @@
 				</div>
 
 
-
+				<div class="main-table__more">
+					<div class="btn">
+						Загрузить еще
+					</div>
+					<p>Вы просмотрели 20 из 23 407 объявлений</p>
+					<div class="main-table__more-loadbar"></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -833,6 +841,131 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="main-popup">
+		<div class="in">
+			<div>
+				<div class="slider3">
+					<div class="slider3__item">
+						<img src="img/slider3.png" alt="">
+					</div>
+					<div class="slider3__item">
+						<img src="img/slider2.png" alt="">
+					</div>
+				</div>
+				<div class="main-popup__info">
+					<div>
+						<p>img</p>
+						<div>20</div>
+					</div>
+					<div>
+						<p>img</p>
+						<div>drom.ru</div>
+					</div>
+					<div>
+						<p>img</p>
+						<div>2</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="block1">
+					<div>
+						<span>img</span>
+						<p>Mercedes-Benz C-klasse IV (W205)</p>
+					</div>
+					<div>стар</div>
+				</div>
+				<div class="block2">
+					<div>
+						<div>2 000 000 ₽</div>
+						<div class="block2-price">
+							<div class="block2-plus">
+								+230к
+							</div>
+							<!-- <div class="block2-minus">-200</div>-->
+						</div>
+					</div>
+					<div>
+						Воронеж
+					</div>
+				</div>
+				<div class="block3">
+					<div>+7 958 5**-**-38</div>
+					<div class="btn">Проверить номер</div>
+				</div>
+				<div class="block4">
+					<div class="main-popup__items">
+						<div class="main-popup__item">
+							<div>Год выпуска</div>
+							<div>2014</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Пробег</div>
+							<div>30 000 км</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Кузов</div>
+							<div>Седан</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Цвет</div>
+							<div>Черный</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Двигатель</div>
+							<div>2.5 л / 204 л.с. / бензин</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Коробка</div>
+							<div>Автоматическая</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Привод</div>
+							<div>Задний</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Руль</div>
+							<div>Левый</div>
+						</div>
+					</div>
+					<div class="main-popup__items">
+						<div class="main-popup__item">
+							<div>Сосотояние</div>
+							<div>Не требует ремонта</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Владельцы</div>
+							<div>2 владельца</div>
+						</div>
+						<div class="main-popup__item">
+							<div>ПТС</div>
+							<div>Оригинал</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Таможня</div>
+							<div>Растаможен</div>
+						</div>
+						<div class="main-popup__item">
+							<div>Обмен</div>
+							<div>Возможен</div>
+						</div>
+						<div class="main-popup__item">
+							<div>VIN</div>
+							<div>WDD28476*1S****24</div>
+						</div>
+					</div>
+				</div>
+				<div class="block5">
+					<p>
+						Комментарий продавца
+					</p>
+					<span>Ухоженное авто, в приличном состоянии, тюнинг, 6ти ступенчатый автомат, я вторая хозяйка. Куплен у официального дилера. Номера отдам если быстро заберете, торг минимальный.</span>
+					<div class="btn">Перейти на объявление</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	 <!-- END content -->
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -844,6 +977,12 @@
 		  slidesToScroll: 1,
 		  autoplay: true,
 		  autoplaySpeed: 2000,
+		});
+		$('.slider3').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 4000,
 		});
 	</script>
   </body>

@@ -128,15 +128,50 @@ body
 				justify-content: space-between
 				.checkbox-wrapper
 					position: relative
-					label:first-child
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					align-items: center
+					height: 50px
+					&-item
 						display: block
-						width: 10px
-						height: 10px
+						width: 18px
+						height: 18px
 						border: solid 1px #cecece;
 						border-radius: 50%
-						padding: 4px
-					input:checked+label:first-child
-
+						padding: 8px
+						position: relative	
+						display: -webkit-flex
+						display: -moz-flex
+						display: -ms-flex
+						display: -o-flex
+						display: flex
+						justify-content: center
+						-webkit-align-items: center 
+						align-items: center 
+						div
+							position: absolute
+							width: 10px
+							height: 10px
+							-webkit-border-radius: 50% 
+							border-radius: 50% 
+					.checkbox-wrapper-item
+						position: absolute
+					
+					input
+						width: 18px
+						height: 18px
+						visibility: hidden
+					
+					label:last-child
+						margin-left: 15px;
+						color: #aaaaaa;
+						font-size: 14px
+							
+					input:checked+.checkbox-wrapper-item>div
+						background-color: $blood
 
 				.select-wrapper
 					position: relative
@@ -180,7 +215,7 @@ body
 						&:last-child select
 							border-radius: 0 25px 25px 0
 			&__top
-				padding-bottom: 30px
+				padding-bottom: 10px
 				border-bottom: 1px solid #d8d8d8
 				margin-bottom: 30px
 			&__nav
@@ -222,7 +257,7 @@ body
 
 	.main-table
 		background-color: #fafafa
-		padding-bottom: 300px
+		padding-bottom: 70px
 		.in
 			max-width: 1366px
 			width: 100%
@@ -249,8 +284,10 @@ body
 		&__year
 			width: 30px
 			margin-right: 26px
+			text-align: left!important
 		&__price
 			width: 83px
+			text-align: left!important
 			margin-right: 22px
 		&__price2
 			width: 50px
@@ -265,6 +302,7 @@ body
 			width: 10px
 			margin-right: 28px
 		&__mileage
+			text-align: left!important
 			width: 53px
 			margin-right: 27px
 		&__kpp
@@ -281,6 +319,7 @@ body
 			margin-right: 33px
 		&__city
 			margin-right: auto
+			text-align: left!important
 		&__like
 		&__item
 			display: -webkit-flex
@@ -454,6 +493,7 @@ body
 			&-input
 				width: 260px
 				height: 47px
+				position: relative
 				input
 					color: #fff
 					font-size: 14px
@@ -462,13 +502,50 @@ body
 					height: 100%
 					border-radius: 3px
 					background-color: #6bb0f1
+					padding-right: 45px
 					&::placeholder
 						color: #fff
 					&:-ms-input-placeholder
 						color: #fff
 					&::-ms-input-placeholder 
 						color: #fff
-			
+				button
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
+					justify-content: center
+					-webkit-align-items: center 
+					align-items: center 
+					cursor: pointer
+					width: 35px
+					height: 35px
+					background-color: #fff
+					color: $water
+					font-size: 24px 
+					position: absolute
+					top: 6px
+					right: 6px
+
+		&__more
+			margin-top: 60px
+			.btn
+				background-color: $water
+				width: 263px;
+				height: 50px;
+				border-radius: 25px;
+				margin: 0 auto
+			&>p
+				text-align: center
+				font-size: 14px
+				color: #9a9a9a;
+				margin: 30px 0 20px
+			&-loadbar
+				height: 2px
+				width: 200px
+				background-color: #d8d8d8
+				margin: 0 auto
 
 
 
@@ -626,3 +703,146 @@ body
 					font-size: 14px
 					line-height: 1
 					color: #9a9a9a
+
+.main-popup
+	position: fixed
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	background-color: RGBA(0,0,0,.5)
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.in
+		background-color: #fff
+		padding: 30px
+		border-radius: 22px
+		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+		max-width: 994px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		&>div:first-child
+			margin-right: 20px
+	.slider3
+		max-width: 280px
+		max-height: 235px
+		overflow: hidden
+		&__item
+			img
+				display: block
+				min-width: 280px
+				min-height: 235px
+	.block1,.block2,.block3,.block4
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	.block1
+		margin-bottom: 35px
+		justify-content: space-between
+		div:first-child
+			display: flex
+			-webkit-align-items: center 
+			align-items: center 
+			p
+				margin-left: 6px 
+				font-size: 18px
+				font-weight: bold
+				color: #020202; 
+	.block2
+		margin-bottom: 21px
+		padding-bottom: 30px
+		border-bottom: 1px solid #d8d8d8
+		justify-content: space-between
+		-webkit-align-items: center 
+		align-items: center 
+		&>div:last-child
+			color: #1e2126
+		&>div:first-child
+			display: flex
+			-webkit-align-items: center 
+			align-items: center
+			&>div:first-child
+				color: #020202
+				font-size: 20px
+				font-weight: bold
+		&-price
+			margin-left: 24px
+			color: #fff
+			font-size: 14px;
+			div
+				width: 50px
+				height: 27px
+				display: -webkit-flex
+				display: -moz-flex
+				display: -ms-flex
+				display: -o-flex
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 13px
+				line-height: 1
+		&-plus
+			background-color: $blood
+		&-minus
+			background-color: #50e3c2
+	.block3
+		align-items: center
+		margin-bottom: 20px
+		padding-bottom: 20px
+		border-bottom: 1px solid #d8d8d8
+		div:first-child
+			font-size: 16px
+			font-weight: bold
+			color: #020202; 
+		.btn
+			width: 168px;
+			height: 43px;
+			border-radius: 21.5px;
+			background-color: #55bb00;
+			margin-left: 30px
+	
+	.block4
+		-webkit-justify-content: space-between 
+		justify-content: space-between 
+		margin-bottom: 20px
+		padding-bottom: 20px
+		border-bottom: 1px solid #d8d8d8
+	&__item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		margin-bottom: 10px
+		&:last-child
+			margin-bottom: 0
+		div:first-child
+			width: 110px
+			color: #9a9a9a;
+			margin-right: 20px
+		div:last-child
+			color: #020202
+		
+
+	.block5
+		p
+			font-size: 18px
+			margin-bottom: 20px
+			color: #020202;
+			font-weight: bold
+		span
+			color: #9a9a9a;
+		.btn
+			width: 211px;
+			height: 44px;
+			border-radius: 22px;
+			background-color: #aaaaaa;
+			margin-top: 30px
