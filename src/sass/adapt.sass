@@ -1,4 +1,6 @@
 +r(1900)
+	.header
+		display: none
 +r(1300)	
 	.footer .slider2__next
 		right: 20px
@@ -86,7 +88,13 @@
 				padding: 60px 30px 48px
 				&>div:first-child
 					margin-right: 10px
-
+	.main-popup
+		.in
+			.block4
+				flex-direction: column
+				align-items: flex-start
+		&__items
+			margin-bottom: 10px
 +r(840)
 	.mainpage .in
 		.main-table
@@ -199,6 +207,40 @@
 					align-items: center;
 					.left
 						margin-bottom: 20px
+	.slider3
+		&-wrapper
+			max-width: 100%
+
+	.main-popup
+		.in
+			flex-direction: column
+			padding: 35px 25px 30px;
+			&>div:first-child
+				margin-right: 0
+			&>div:nth-child(2)
+				margin-top: 40px
+			.slider3-wrapper
+				margin: 0 auto
+		.block1
+			margin-bottom: 15px
+			div:first-child p
+				font-size: 16px
+		.block2
+			flex-direction: column;
+			align-items: flex-start;
+			padding-bottom: 20px
+			&>div:first-child
+				margin-bottom: 10px
+		.block3
+			flex-direction: column;
+			align-items: flex-start;
+			.btn
+				margin-left: 0
+				margin-top: 15px
+		&__item div:first-child
+			width: 75px
+	.mainpage .in .main-table__notice
+		padding: 40px 30px
 
 +r(600)
 	.mainpage 

@@ -1092,7 +1092,7 @@ body {
 .main-popup {
   padding: 30px 10px; }
   .main-popup-wrapper {
-    display: none;
+    display: block;
     cursor: pointer;
     position: fixed;
     overflow-y: scroll;
@@ -1381,6 +1381,10 @@ body {
       font-size: 14px;
       line-height: 1; }
 
+@media only screen and (max-width: 1900px) {
+  .header {
+    display: none; } }
+
 @media only screen and (max-width: 1300px) {
   .footer .slider2__next {
     right: 20px; }
@@ -1458,7 +1462,12 @@ body {
   .mainpage .in .main-table__notice {
     padding: 60px 30px 48px; }
     .mainpage .in .main-table__notice > div:first-child {
-      margin-right: 10px; } }
+      margin-right: 10px; }
+  .main-popup .in .block4 {
+    flex-direction: column;
+    align-items: flex-start; }
+  .main-popup__items {
+    margin-bottom: 10px; } }
 
 @media only screen and (max-width: 840px) {
   .mainpage .in .main-table__milliage {
@@ -1561,7 +1570,38 @@ body {
       flex-direction: column;
       align-items: center; }
       .mainpage .in .filter__nav .left {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+  .slider3-wrapper {
+    max-width: 100%; }
+  .main-popup .in {
+    flex-direction: column;
+    padding: 35px 25px 30px; }
+    .main-popup .in > div:first-child {
+      margin-right: 0; }
+    .main-popup .in > div:nth-child(2) {
+      margin-top: 40px; }
+    .main-popup .in .slider3-wrapper {
+      margin: 0 auto; }
+  .main-popup .block1 {
+    margin-bottom: 15px; }
+    .main-popup .block1 div:first-child p {
+      font-size: 16px; }
+  .main-popup .block2 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 20px; }
+    .main-popup .block2 > div:first-child {
+      margin-bottom: 10px; }
+  .main-popup .block3 {
+    flex-direction: column;
+    align-items: flex-start; }
+    .main-popup .block3 .btn {
+      margin-left: 0;
+      margin-top: 15px; }
+  .main-popup__item div:first-child {
+    width: 75px; }
+  .mainpage .in .main-table__notice {
+    padding: 40px 30px; } }
 
 @media only screen and (max-width: 600px) {
   .mainpage .in .cars {
