@@ -36,9 +36,8 @@ gulp.task('autoprefix', ['sass'], function () {
 
 //Минимизация JS
 gulp.task('scripts', function() {
-    return gulp.src('./src/js/*.js')
+    return gulp.src('./src/js/script.js')
     .pipe(concat('script.js'))
-    .pipe(uglyfly())
     .pipe(gulp.dest('./src/js/'));
 });
 

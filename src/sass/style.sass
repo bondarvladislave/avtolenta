@@ -6,6 +6,9 @@ body
 	font-family: "Circe"
 	line-height: 1.4
 
+.body-popup
+	overflow: hidden
+
 .in
 	max-width: 1160px
 	margin: 0 auto
@@ -40,13 +43,16 @@ body
 			display: -o-flex
 			display: flex
 			align-items: center
-		.logo
+		.logo a
 			font-size: 23px;
 			font-weight: bold;
 			color: $water
+			text-decoration: none
 	&__register-btn
 		margin-left: 80px
 		margin-right: 40px
+	&__login
+		cursor: pointer
 	&__nav
 		margin-left: 33px
 		ul
@@ -66,6 +72,7 @@ body
 .mainpage
 	margin-top: 118px
 	.in
+		word-break: break-word;
 		.block1
 			display: -webkit-flex
 			display: -moz-flex
@@ -95,6 +102,11 @@ body
 			justify-content: space-between
 			max-height: 300px;
 			overflow: hidden;
+			position: relative
+			&-open
+				max-height: none
+			&__items
+				padding: 0 5px
 			&__item
 				margin-bottom: 24px
 				display: -webkit-flex
@@ -103,14 +115,34 @@ body
 				display: -o-flex
 				display: flex
 				align-items: center
+
 				&:last-child
 					margin-bottom: 0
 				p
+					max-width: 110px
 					color: #020202;
 					margin-right: 6px
 				span
 					font-size: 14px;
 					color: #9a9a9a;
+				&-slot
+					height: 22px
+			&__abs
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 170px;
+				padding-left: 28px;
+				background-color: #fff;
+				height: 28px;
+				line-height: 28px;
+				cursor: pointer
+			&__show,&__hide
+				color: $blood
+			&__hide
+				display: none
+
+
 		.filter
 			margin-top: 30px
 			margin-bottom: 30px
@@ -218,6 +250,8 @@ body
 				padding-bottom: 10px
 				border-bottom: 1px solid #d8d8d8
 				margin-bottom: 30px
+			&__bottom-wrapper
+				display: none
 			&__nav
 				margin-top: 30px
 				padding: 0 30px 
@@ -225,12 +259,24 @@ body
 				justify-content: space-between
 				color: #ff4d00;
 				.left
+					cursor: pointer
 					display: -webkit-flex
 					display: -moz-flex
 					display: -ms-flex
 					display: -o-flex
 					display: flex
 					align-items: center
+					.filter__nav-close-wrapper
+						display: none
+					.filter__nav-open-wrapper
+						display: block
+					&-open
+						.filter__nav-close-wrapper
+							display: block
+						.filter__nav-open-wrapper
+							display: none
+
+
 				.right
 					display: -webkit-flex
 					display: -moz-flex
@@ -252,12 +298,18 @@ body
 					display: flex
 					align-items: center
 				&-close
-					display: none
+					display: -webkit-flex
+					display: -moz-flex
+					display: -ms-flex
+					display: -o-flex
+					display: flex
 					align-items: center
+
 
 	.main-table
 		background-color: #fafafa
 		padding-bottom: 70px
+		word-wrap: break-word
 		.in
 			max-width: 1366px
 			width: 100%
@@ -277,47 +329,65 @@ body
 					display: none
 		&__time
 			width: 45px
+			min-width: 45px
 			margin-right: 44px
 		&__brand
 			width: 380px
+			min-width: 380px
 			text-align: left!important
 		&__year
 			width: 30px
+			min-width: 30px
 			margin-right: 26px
 			text-align: left!important
 		&__price
 			width: 83px
+			min-width: 83px
 			text-align: left!important
 			margin-right: 22px
 		&__price2
 			width: 50px
+			min-width: 50px
 			margin-right: 32px
 		&__views
 			width: 16px
+			min-width: 16px
 			margin-right: 35px
 		&__file
 			width: 10px
+			min-width: 10px
 			margin-right: 39px
 		&__calls
 			width: 10px
+			min-width: 10px
 			margin-right: 28px
 		&__mileage
 			text-align: left!important
 			width: 53px
+			min-width: 53px
 			margin-right: 27px
 		&__kpp
 			width: 20px
+			min-width: 20px
 			margin-right: 34px
 		&__photos
 			width: 15px
+			min-width: 15px
 			margin-right: 22px
 		&__source
 			width: 60px
+			min-width: 60px
 			margin-right: 22px
+			a
+				text-decoration: none
+				color: inherit
 		&__guarantee
 			width: 14px
+			min-width: 14px
 			margin-right: 33px
 		&__city
+			width: 135px
+			min-width: 135px
 			margin-right: auto
 			text-align: left!important
 		&__like
@@ -373,8 +443,9 @@ body
 						font-size: 16px
 					span:first-child
 						margin-right: 5px
-			.main-table__year
-				font-size: 15px
+					a
+						text-decoration: none
+						color: inherit
 			.main-table__price
 				color: #020202
 				&-vis
@@ -548,55 +619,6 @@ body
 				margin: 0 auto
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.redesign
-	color: #9fa3a7
-	.in
-		padding: 100px 10px
-	&__caption-block
-		margin-bottom: 80px
-		text-align: center
-		&2
-			margin-top: 80px
-		span
-			line-height: 1.86;
-			font-size: 16px
-		h2
-			margin-top: 17px
-			font-size: 48px
-			margin-bottom: 37px
-			color: #000
-			line-height: 1.5
-		p
-			font-size: 24px
-	.block3
-		position: relative
-		padding-bottom: 60px
-		margin-bottom: 80px
-		.line
-			position: absolute
-			width: 85%
-			left: 0; 
-			right: 0; 
-			margin-left: auto; 
-			margin-right: auto;
-			height: 2px
-			background-color: #cecece
-			bottom: 0
-
-
 .slider1
 	margin-top: 60px
 	margin-bottom: 80px
@@ -679,9 +701,17 @@ body
 			&>p
 				font-size: 16px;
 	.slider2
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		&__item-wrapper
+
 		&__item
 			max-width: 263px
-			margin: 0 15px
+			margin: 0 auto
 			border-radius: 10px
 			background-color: #333333
 			transition: all .3s
@@ -703,21 +733,78 @@ body
 					font-size: 14px
 					line-height: 1
 					color: #9a9a9a
+		&__arrows
+			background-color: #9a9a9a
+			position: absolute
+			border-radius: 50%
+			height: 40px
+			width: 40px
+			cursor: pointer
+			z-index: 3
+			transition: all .3s
+			img
+				display: block
+			&:hover
+				background-color: #e2dddd
+
+		&__prev
+			left: -45px
+		&__next
+			right: -45px
+
+.redesign
+	color: #9fa3a7
+	.in
+		padding: 100px 10px
+	&__caption-block
+		margin-bottom: 80px
+		text-align: center
+		&2
+			margin-top: 80px
+		span
+			line-height: 1.86;
+			font-size: 16px
+		h2
+			margin-top: 17px
+			font-size: 48px
+			margin-bottom: 37px
+			color: #000
+			line-height: 1.5
+		p
+			font-size: 24px
+	.block3
+		position: relative
+		padding-bottom: 60px
+		margin-bottom: 80px
+		.line
+			position: absolute
+			width: 85%
+			left: 0; 
+			right: 0; 
+			margin-left: auto; 
+			margin-right: auto;
+			height: 2px
+			background-color: #cecece
+			bottom: 0
 
 .main-popup
-	position: fixed
-	width: 100%
-	height: 100%
-	left: 0
-	top: 0
-	background-color: RGBA(0,0,0,.5)
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding: 30px 10px
+	&-wrapper
+		display: none
+		cursor: pointer
+		position: fixed
+		overflow-y: scroll
+		overflow-x: hidden
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		background-color: RGBA(0,0,0,.5)
 	.in
+		cursor: auto
 		background-color: #fff
-		padding: 30px
-		border-radius: 22px
+		padding: 35px 30px 30px
+		border-radius: 18px
 		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
 		max-width: 994px
 		display: -webkit-flex
@@ -725,18 +812,41 @@ body
 		display: -ms-flex
 		display: -o-flex
 		display: flex
+		position: relative
 		justify-content: space-between
 		&>div:first-child
 			margin-right: 20px
+	&__info
+		margin-top: 30px
+		&>div
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			margin-bottom: 13px
+			&:last-child
+				margin-bottom: 0
+			div
+				font-size: 14px
+				color: #9a9a9a
+				margin-left: 20px
 	.slider3
-		max-width: 280px
-		max-height: 235px
-		overflow: hidden
+		&-wrapper
+			width: 280px
+			display: block;
+			height: 235px
 		&__item
 			img
 				display: block
-				min-width: 280px
-				min-height: 235px
+
+		.slick-dots li.slick-active button:before
+			opacity: 1
+			color: $blood
+		.slick-dots li button:before
+			color: #000
+			font-size: 35px
 	.block1,.block2,.block3,.block4
 		display: -webkit-flex
 		display: -moz-flex
@@ -846,3 +956,137 @@ body
 			border-radius: 22px;
 			background-color: #aaaaaa;
 			margin-top: 30px
+
+
+.close-popup
+	display: block
+	cursor: pointer
+	position: absolute
+	right: 5px
+	top: 5px
+	width: 25px
+	height: 25px
+	transition: transform .25s ease-in-out
+	&:hover
+		transform: rotate(180deg)
+	&:before
+		content: ""
+		position: absolute
+		display: block
+		margin: auto
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		width: 25px
+		height: 0
+		border-top: 2px solid rgba(0, 0, 0, 0.5)
+		transform: rotate(45deg)
+		transform-origin: center
+	&:after
+		content: ""
+		position: absolute
+		display: block
+		margin: auto
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		width: 25px
+		height: 0
+		border-top: 2px solid rgba(0, 0, 0, 0.5)
+		transform: rotate(-45deg)
+		transform-origin: center
+
+.popup
+	cursor: pointer
+	position: fixed
+	overflow-y: scroll
+	overflow-x: hidden
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	background-color: RGBA(0,0,0,.8)
+	&__content
+		cursor: auto
+		position: relative
+		max-width: 420px
+		padding: 30px 60px
+		border-radius: 8px;
+		background-color: #ffffff;
+		box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+		margin: 50px auto
+		&>p
+			text-align: center
+			font-size: 24px
+			color: #020202;
+			font-weight: bold
+		form
+			margin-top: 50px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			flex-direction: column
+			&>input
+				font-size: 14px
+				width: 300px;
+				height: 50px;
+				border-radius: 25px;
+				border: solid 1px #cecece;
+				color: #aaaaaa;
+				padding: 0 14px
+				margin-bottom: 30px
+				&::placeholder
+					color: #aaaaaa;
+				&:-ms-input-placeholder
+					color: #aaaaaa;
+				&::-ms-input-placeholder 
+					color: #aaaaaa;
+				
+			button
+				width: 100%
+				height: 50px
+				margin-top: 20px
+
+
+	&-reg
+		display: none
+		.checkbox-wrapper
+			margin: 20px 0 30px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: flex-start
+			position: relative
+			label:last-child
+				margin-left: 36px
+				color: #9a9a9a;
+				font-size: 14px
+			input:checked+.checkbox-wrapper-item
+				background-color: $blood
+			input
+				visibility: hidden	
+			&-item
+				position: absolute
+				cursor: pointer
+				left: 0
+				background-color: #Fff
+				min-width: 18px;
+				min-height: 18px;
+				border-radius: 2px;
+				border: solid 2px #9a9a9a;
+	&-login
+		display: none
+		form
+			div
+				cursor: pointer
+				color: #9a9a9a;
+				margin-top: 30px
+				font-size: 14px
+				line-height: 1
