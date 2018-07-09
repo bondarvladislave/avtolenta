@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="19px" viewBox="0 0 20 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Star</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1360 1198.27 1366.18 1202 1364.54 1194.97 1370 1190.24 1362.81 1189.63 1360 1183 1357.19 1189.63 1350 1190.24 1355.46 1194.97 1353.82 1202"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="avtolenta--main-" transform="translate(-1350.000000, -1183.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Star" fill="#AAAAAA" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

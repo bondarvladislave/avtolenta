@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Delete</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="ui-kit" transform="translate(-4103.000000, -1136.000000)" stroke="#AAAAAA">
+            <g id="Group-2" transform="translate(3738.000000, 1107.000000)">
+                <path d="M390,42 C390,48.627375 384.62775,54 378,54 C371.372625,54 366,48.627375 366,42 C366,35.372625 371.372625,30 378,30 C384.62775,30 390,35.372625 390,42 Z M378.000169,41.9999813 L375.075788,39.0757875 L378.000169,41.9999813 L375.075788,44.924175 L378.000169,41.9999813 Z M378.000169,41.9999813 L380.924663,44.9242875 L378.000169,41.9999813 L380.924663,39.075675 L378.000169,41.9999813 Z" id="Delete"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,4 +1,10 @@
 $(document).ready(function() {
+	/*Nav-responsive*/
+	$('#js-responsive-nav').click(function() {
+	    if(window.innerWidth < 840){
+	        $(this).toggleClass("is-open");
+	    }
+	});
 	/*Открытие попапа главного с автомобилем*/
 	$('.main-table__item').click(function() {
 		$('.main-popup-wrapper').show()
@@ -41,7 +47,7 @@ $(document).ready(function() {
 		$('body').addClass('body-popup')
 	})
 
-	$('.popup-reg .close-popup').click(function() {
+	$('.popup-reg-close').click(function() {
 		$('.popup-reg').hide()
 		$('body').removeClass('body-popup')
 	})
@@ -59,7 +65,7 @@ $(document).ready(function() {
 		$('body').addClass('body-popup')
 	})
 
-	$('.popup-login .close-popup').click(function() {
+	$('.popup-login-close').click(function() {
 		$('.popup-login').hide()
 		$('body').removeClass('body-popup')
 	})
@@ -107,7 +113,7 @@ $(document).ready(function() {
 	        infinite: true,
 	        dots: true
 	      }
-	    }
+	    },
 	  ],
 	});
 	/*Слайдер попап*/

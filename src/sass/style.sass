@@ -1,6 +1,10 @@
 $blood: #fe4c00
 $water: #157ee1
 
+@font-face
+	font-family: "Agfutura";
+	src: url('../fonts/AGFuturaBold.ttf');
+
 body
 	font-size: 16px
 	font-family: "Circe"
@@ -48,9 +52,15 @@ body
 			font-weight: bold;
 			color: $water
 			text-decoration: none
+			font-family: "AGfutura"
 	&__register-btn
 		margin-left: 80px
 		margin-right: 40px
+	&__likes
+		margin-left: 40px
+		cursor: pointer
+	&__favorites
+		cursor: pointer
 	&__login
 		cursor: pointer
 	&__nav
@@ -68,7 +78,19 @@ body
 					color: #1e2126;
 				&:last-child
 					margin-right: 0
-
+	.responsive-nav
+		display: none
+		&__item
+			padding: 3px 10px;
+			color: #fff;
+			a
+				color: inherit
+			&-bn
+				border-top: none
+				padding: 10px
+		.btn
+			margin-left: 0;
+			margin-right: auto;
 .mainpage
 	margin-top: 118px
 	.in
@@ -191,6 +213,8 @@ body
 							border-radius: 50% 
 					.checkbox-wrapper-item
 						position: absolute
+					label
+						cursor: pointer
 					
 					input
 						width: 18px
@@ -257,7 +281,12 @@ body
 				padding: 0 30px 
 				display: flex
 				justify-content: space-between
+				align-items: center
 				color: #ff4d00;
+				&-open,&-close
+					img
+						margin-right: 10px
+
 				.left
 					cursor: pointer
 					display: -webkit-flex
@@ -325,8 +354,6 @@ body
 			border-bottom: 1px solid #fff
 			&>div
 				text-align: center
-				img
-					display: none
 		&__time
 			width: 45px
 			min-width: 45px
@@ -363,12 +390,12 @@ body
 			margin-right: 28px
 		&__mileage
 			text-align: left!important
-			width: 53px
-			min-width: 53px
+			width: 54px
+			min-width: 54px
 			margin-right: 27px
 		&__kpp
-			width: 20px
-			min-width: 20px
+			width: 37px
+			min-width: 37px
 			margin-right: 34px
 		&__photos
 			width: 15px
@@ -391,6 +418,9 @@ body
 			margin-right: auto
 			text-align: left!important
 		&__like
+			img
+				min-width: 20px
+				height: 20px
 		&__item
 			display: -webkit-flex
 			display: -moz-flex
@@ -509,7 +539,7 @@ body
 					align-items: center
 					font-size: 16px
 					color: $blood
-					margin-right: 67px
+					margin-right: 85px
 					p
 						line-height: 1
 					.buy-pro
@@ -671,6 +701,18 @@ body
 	&__payments
 		margin-top: 80px
 		color: #9a9a9a;
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		div
+			margin-left: 60px
+			display: flex;
+			align-items: center;
+			img
+				margin-right: 30px
 	&__second
 		background-color: #fff
 		.in
@@ -790,7 +832,7 @@ body
 .main-popup
 	padding: 30px 10px
 	&-wrapper
-		display: block
+		display: none
 		cursor: pointer
 		position: fixed
 		overflow-y: scroll
@@ -1008,6 +1050,13 @@ body
 	left: 0
 	top: 0
 	background-color: RGBA(0,0,0,.8)
+	&-close
+		position: absolute
+		top: 20px
+		right: 20px
+		cursor: pointer
+		&:hover
+
 	&__content
 		cursor: auto
 		position: relative
@@ -1056,6 +1105,7 @@ body
 	&-reg
 		display: none
 		.checkbox-wrapper
+			cursor: pointer
 			margin: 20px 0 30px
 			display: -webkit-flex
 			display: -moz-flex

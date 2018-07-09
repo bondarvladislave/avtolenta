@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Phone</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="avtolenta--main-" transform="translate(-830.000000, -1184.000000)" stroke="#9A9A9A">
+            <path d="M831,1192.87045 L840.999957,1192.87045 M836.43466,1195.99748 C836.43466,1196.23913 836.240019,1196.43498 835.99987,1196.43498 C835.759865,1196.43498 835.565079,1196.23913 835.565079,1195.99748 C835.565079,1195.75584 835.759865,1195.55998 835.99987,1195.55998 C836.240019,1195.55998 836.43466,1195.75584 836.43466,1195.99748 M831.000043,1199 L841,1199 L841,1185 L831.000043,1185 L831.000043,1199 Z" id="Phone"></path>
+        </g>
+    </g>
+</svg>

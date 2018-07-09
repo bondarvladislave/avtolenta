@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Broker Graph</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="filter-mini" transform="translate(-29.000000, -222.000000)" stroke="#FF4D00" stroke-width="2">
+            <g id="Broker-Graph">
+                <path d="M40.4999344,223 L40.4999344,228.342141 L40.4999344,223 Z M46.6417757,235.391092 L46.6417757,225.748837 L51,225.748837 L51,235.391092 L46.6417757,235.391092 Z M48.8207894,223 L48.8207894,225.746123 L48.8207894,223 Z M48.8207894,235.391193 L48.8207894,243.999799 L48.8207894,235.391193 Z M38.3207238,237.98711 L38.3207238,228.34519 L42.6789481,228.34519 L42.6789481,237.98711 L38.3207238,237.98711 Z M40.4999344,237.98721 L40.4999344,243.999799 L40.4999344,237.98721 Z M30,240.212555 L30,230.570635 L34.3578962,230.570635 L34.3578962,240.212555 L30,240.212555 Z M32.178784,223 L32.178784,230.567586 L32.178784,223 Z M32.178784,240.212522 L32.178784,244 L32.178784,240.212522 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

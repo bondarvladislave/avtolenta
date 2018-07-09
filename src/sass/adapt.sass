@@ -1,7 +1,5 @@
 +r(1900)
-	.header
-		display: none
-+r(1300)	
++r(1350)	
 	.footer .slider2__next
 		right: 20px
 	.footer .slider2__prev
@@ -60,6 +58,8 @@
 				&>div
 					margin-bottom: 20px
 +r(1023)
+	.header__nav ul li
+		margin-right: 25px
 	.mainpage .in
 		.main-table
 			&__item-pro
@@ -96,6 +96,16 @@
 		&__items
 			margin-bottom: 10px
 +r(840)
+	.header
+		&__nav
+			display: none!important
+		.in
+			&>div:nth-child(2)
+				.header__register-btn,.header__login
+					display: none
+				
+		.responsive-nav
+			display: block
 	.mainpage .in
 		.main-table
 			&__milliage
@@ -132,6 +142,16 @@
 				margin-bottom: 30px
 		&__payments
 			margin-top: 50px
+			flex-direction: column
+			align-items: flex-start
+			div
+				-webkit-flex-direction: column 
+				-ms-flex-direction: column 
+				flex-direction: column
+				margin-left: 0 
+				img
+					margin-right: 0
+					margin-top: 20px
 		&__menu
 			flex-direction: column;
 			margin-top: 50px
@@ -152,6 +172,22 @@
 				&>p
 					text-align: center
 					margin: 0 auto
+	.redesign 
+		.in
+			padding: 30px 10px
+		&__caption-block 
+			margin-bottom: 30px
+			h2
+				font-size: 35px
+				line-height: 1
+			p
+				font-size: 20px
+		.slider1
+			margin: 30px auto
+		.block3
+			padding-bottom: 30px 
+			margin-bottom: 30px
+
 
 +r(767)
 	.mainpage
