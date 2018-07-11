@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>3. Icons/ic_comment</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M21.658,6.93333333 C21.658,5.98 20.8866667,5.2 19.9333333,5.2 L6.06666667,5.2 C5.11333333,5.2 4.33333333,5.98 4.33333333,6.93333333 L4.33333333,17.3333333 C4.33333333,18.2866667 5.11333333,19.0666667 6.06666667,19.0666667 L18.2,19.0666667 L21.6666667,22.5333333 L21.658,6.93333333 L21.658,6.93333333 Z M18.2,15.6 L7.8,15.6 L7.8,13.8666667 L18.2,13.8666667 L18.2,15.6 L18.2,15.6 Z M18.2,13 L7.8,13 L7.8,11.2666667 L18.2,11.2666667 L18.2,13 L18.2,13 Z M18.2,10.4 L7.8,10.4 L7.8,8.66666667 L18.2,8.66666667 L18.2,10.4 L18.2,10.4 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.-Forms/7.-Text-Area/4.-Icon-No-Label" transform="translate(-16.000000, -17.000000)">
+            <g id="3.-Icons/ic_comment" transform="translate(12.000000, 12.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Icon"></g>
+                <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8" fill-rule="evenodd">
+                    <g transform="translate(1.733333, 1.733333)" id="Gray-85">
+                        <rect x="0" y="0" width="23" height="23"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

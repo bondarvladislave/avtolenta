@@ -77,6 +77,18 @@ $(document).ready(function() {
 		$('body').removeClass('body-popup')
 	});
 
+	$('.header__favorites>img').click(function() {
+		$('.header__favorites-items').toggleClass('active')
+	})
+
+	$('.header__favorites-close').click(function() {
+		$(this).parent().hide()
+	})
+
+
+
+
+
 	/*Слайдер футер*/
 	$('.slider2').slick({
 	  slidesToShow: 4,
